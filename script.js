@@ -69,6 +69,12 @@ if (requestedService && serviceSelect instanceof HTMLSelectElement) {
   }
 }
 
+const requestedLocation = new URLSearchParams(window.location.search).get("location");
+const locationInput = estimateForm?.elements.namedItem("location");
+if (requestedLocation && locationInput instanceof HTMLInputElement) {
+  locationInput.value = requestedLocation;
+}
+
 estimateForm?.addEventListener("submit", (event) => {
   event.preventDefault();
 
@@ -80,6 +86,7 @@ estimateForm?.addEventListener("submit", (event) => {
     `Phone: ${details.get("phone") || "Not provided"}`,
     `Property type: ${details.get("property") || "Not provided"}`,
     `Service: ${details.get("service") || "Not selected"}`,
+    `Property location: ${details.get("location") || "Not provided"}`,
     "",
     "Project details:",
     details.get("message") || "No additional details provided."
