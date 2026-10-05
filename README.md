@@ -10,7 +10,7 @@ Serve this folder from its root with any static file server and open `index.html
 
 Company details and customer quotes are based on the public Southern Landscaping Services website at <https://www.southernlandscapingserv.com/>. The public site did not expose a standalone logo or street address, so the header uses a text wordmark with a simple, newly drawn leaf mark and no address is shown.
 
-The `assets/images/landscape-*.jpg` photos are licensed for commercial use under the [Unsplash License](https://unsplash.com/license). Photographer credits and original photo links appear on the Outdoor Inspiration page.
+The `assets/images/service-*.jpg` and `assets/images/landscape-*.jpg` photos are licensed for commercial use under the [Unsplash License](https://unsplash.com/license). Service imagery is matched to the service shown, and photographer credits and original photo links appear on service and inspiration pages.
 
 ## Pages
 
